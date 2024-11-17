@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chic's Look Studio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/log.png" /> 
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" width="220" height="80" alt="logo"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios"> Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="giftcard.html"> Gift Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactanos">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html"
+                ><img src="img/carrito_c.png" height="30" 
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><img src="img/inicio_s.png" height="30"> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section
+      id="hero"
+      class="d-flex align-items-center text-center"
+      style="
+        background-image: url('img/your-hero-image.jpg');
+        background-size: cover;
+        height: 100vh;
+      ">
+      <div class="container">
+        <h1 class="display-4 text-white">Bienvenido a Chic's Look Studio</h1>
+        <p class="lead text-white">
+          Centro de Estética y Belleza en Concepción
+        </p>
+        <a href="contacto.html" class="btn btn-primary btn-lg rounded-pill"> Agenda tu hora aquí </a>
+      </div>
+    </section>
+
+    <!--Carrusel de fotos-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+
+      <!-- TEXTO Y COLLAGE DE IMG -->
+      <div class="container my-5">
+        <div class="row">
+          <!-- Lado izquierdo con título y texto -->
+          <div class="col-md-6 d-flex flex-column justify-content-center text-content">
+            <h2 class="title"> Nuestra historia </h2>
+            <p class="text">Chic's Look Studio es un centro de estética ubicado en la ciudad de Concepción, dedicado a realzar la belleza y el bienestar de sus clientes en un ambiente moderno y sofisticado. Especializados en servicios de estética facial y corporal, contamos con un equipo de profesionales altamente capacitados que utilizan productos de la mejor calidad y técnicas innovadoras para ofrecer una experiencia única y personalizada.
+              <p class="text">
+                Nuestro compromiso es ayudar a cada cliente a descubrir su mejor versión, cuidando cada detalle para que cada visita sea un momento de relax, renovación y cuidado personal. En Chic's Look Studio, cada tratamiento está pensado para reflejar tu estilo y resaltar tu belleza natural.
+              </p>
+            </p>
+          </div>
+      
+          <!-- Lado derecho con collage de imágenes -->
+          <div class="col-md-6">
+            <div class="row collage">
+              <div class="col-6">
+                <img src="img/coll1.jpeg" alt="Foto 1" class="img-fluid collage-img">
+              </div>
+              <div class="col-6">
+                <img src="img/coll4.jpeg" alt="Foto 2" class="img-fluid collage-img">
+              </div>
+              <div class="col-6">
+                <img src="img/coll3.jpeg" alt="Foto 3" class="img-fluid collage-img">
+              </div>
+              <div class="col-6">
+                <img src="img/coll2.jpeg" alt="Foto 4" class="img-fluid collage-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Fotos de el carrusel largo-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/blush.png"
+            class="d-block w-100 slider-img"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/prom.png" class="d-block w-100 slider-img"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/color.jpg"
+            class="d-block w-100 slider-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="container mt-5">
+      <h2 class="text-center mb-4"> NUESTROS SERVICIOS </h2>
+      <div class="row">
+
+        <!-- Servicio Peluquería -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/peluquer%C3%ADa-1615496220.webp" class="card-img-top" alt="Peluquería" />
+            <div class="card-body">
+              <h5 class="card-title">Peluquería</h5>
+              <p class="card-text">Cortes, Peinados y Tratamientos.</p>
+              <a href="peluqueria.html" class="btn btn-secondary rounded-pill"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio Estética -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="https://www.bettinafrumboli.com/wp-content/uploads/2023/05/Beneficios-del-a%CC%81cido-hialuro%CC%81nico-en-tratamientos-este%CC%81ticos-01-1.jpg" class="card-img-top" alt="Estética" />
+            <div class="card-body">
+              <h5 class="card-title">Tratamientos Estéticos</h5>
+              <p class="card-text">Faciales, Rejuvenecimiento y más.</p>
+              <a href="" class="btn btn-secondary rounded-pill"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--Servicio maquillaje -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="https://www.beautymarket.es/imagen/min17120.jpg" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Maquillaje</h5>
+              <p class="card-text">Labiales, base, sombras y más.</p>
+              <a href="" class="btn btn-secondary rounded-pill">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Servicios depilación-->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1661337063294-af8fe65afdb4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGVwaWxhY2lvbnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="" />
+            <div class="card-body">
+              <h5 class="card-title">Depilación</h5>
+              <p class="card-text">Láser, con cuchilla, cera y más.</p>
+              <a href="" class="btn btn-secondary rounded-pill">Ver más</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Testimonios-->
+    <div class="container mx-auto" style="width: 100%;" id="testimonio">
+      <div class="testimonial-slider">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-title">
+              <h2 class="fw-bold display-6"> Testimonio de Clientes</h2>
+            </div>
+            <!-- Controles de navegación debajo del título -->
+            <div class="carousel-controls">
+              <button class="carousel-control-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="carousel-control-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-between"> <!-- Flex para disposición en fila -->
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"> Jorge Alessandri </h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text">"Un lugar perfecto para hacer todo tipo de tratamiento en un solo lugar, ordenado, limpio y buena atención"</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"> Osman Vidal </h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text">"Más de 13 años con los mejores profesionales, para sentirte única y maravillosa"</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-between">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Colomba Marti</h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text">"Lugar cómodo, atención excelente. Soy cliente desde muchos años, y siempre buen servicio, recomentable."</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"> Lilith Martinez </h5>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text">"¡Muy buena atención! Me encanta, muy recomendable, hay mucha variedad de productos."</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3>Horarios de atención</h3>
+              <p>De Lunes a viernes: 09:00 – 20:00<br>
+                 Sábado: 09:00 – 14:00<br>
+                 Domingo y feriados (cerrado)
+              </p>
+          </div>
+          <div class="footer-section">
+            <h3>Ubicación</h3>
+            <p>Amunategui 92, Concepción, Chile</p>
+            <a href="https://www.google.com/maps/place/Amunategui+92,+Concepción,+Chile" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Ubicación" width="40">
+            </a>
+        </div>
+
+        <div class="footer-section" id="contactanos">
+          <h3>Contacto</h3>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/561/561188.png" alt="Email" class="icon"> proyectoconel@mensocodigo.com</p>
+          <div class="social-icons">
+
+              <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram">
+              </a>
+              <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">
+                  <img src="https://i.blogs.es/45198e/icono_supernoticia/450_1000.png" alt="WhatsApp">
+              </a>
+          </div>
+      </div>      
+      </div>
+  </div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

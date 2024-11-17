@@ -1,0 +1,297 @@
+body {
+  padding-top: 90px;
+  font-family: "Arial", sans-serif;
+  background-color: #f1e6f1; /* Light neutral background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f5d7f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem; /* Reduce la altura del navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar links */
+.navbar-brand {
+  font-family: Arial, sans-serif;
+  font-size: 24px; /* Tamaño de fuente ajustado para destacar la marca */
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.nav-link {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333 !important;
+  position: relative;
+  margin: 0 1rem; /* Espaciado entre los enlaces */
+  padding-bottom: 8px; /* Espacio adicional debajo para el subrayado */
+  text-transform: uppercase; /* Poner en mayúsculas para un estilo similar */
+}
+
+/* Subrayado de enlace activo */
+.nav-link.active {
+  color: #333 !important;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: blueviolet; /* Color de subrayado en hover y activo */
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+
+
+
+/* Cards for services/products */
+.card {
+  background-color: #ffffff; /* White background for card */
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: blur(0); /* No blur initially */
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  filter: blur(3px); /* Slight blur on hover */
+}
+
+/* Button Style */
+.card .btn {
+  background-color: #6c107c;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #9b5aa7;
+}
+/*Slider*/
+.slider-img {
+  width: 600px;
+  height: 550px;
+  
+}
+/* Contact Form */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #e0777d;
+  box-shadow: 0px 0px 5px rgba(224, 119, 125, 0.5);
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7b2b8b;
+}
+
+
+
+
+
+/*css para el botón que oculta los productos*/
+#toggle-products-btn {
+  background-color: #6c107c; /* Color principal */
+  color: white; /* Texto en blanco */
+  font-size: 1.2rem; /* Tamaño del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 50px; /* Borde redondeado */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animación en hover */
+  margin-bottom: 80px;
+}
+
+#toggle-products-btn:hover {
+  background-color: #9b5aa7; /* Color al pasar el ratón */
+  transform: scale(1.05); /* Ligero aumento al pasar el ratón */
+}
+
+#toggle-products-btn:active {
+  background-color: #4a0b5c; /* Color al hacer clic */
+  transform: scale(0.95); /* Ligera reducción al hacer clic */
+}
+
+
+
+
+
+/*Diseño de los contenedores de los productos*/
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #5a2d82;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* Cards for services/products */
+.card {
+  background-color: #ffffff; /* White background for card */
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: blur(0); /* No blur initially */
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  filter: blur(3px); /* Slight blur on hover */
+}
+
+/* Button Style */
+.card .btn {
+  background-color: #6c107c;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #9b5aa7;
+}
+/*Slider*/
+.slider-img {
+  width: 600px;
+  height: 550px;
+  
+}
+/* Contact Form */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #e0777d;
+  box-shadow: 0px 0px 5px rgba(224, 119, 125, 0.5);
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7b2b8b;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #af8fb5;
+  color: #4d0d47;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: relative; /* Evita que se superponga con el contenido */
+  margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: auto; /* Empuja el footer al final de la página */
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  color: #2a1325;
+}
+
+.footer-section a img {
+  width: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-section a img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  position: relative;
+  color: #231f20;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #a56cae;
+  margin: 5px auto;
+}
+
+.footer-section p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.icon {
+  width: 26px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.social-icons img {
+  width: 26px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}

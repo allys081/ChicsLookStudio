@@ -1,0 +1,439 @@
+/* General Styles */
+body {
+  padding-top: 70px; /* Prevent overlap with navbar */
+  font-family: "Arial", sans-serif;
+  background-color:#f1e6f1 ; /* Light neutral background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 80px;
+}
+
+/*TESTIMONIIOS*/
+.testimonial-slider {
+  background-color: var(--second-color);
+  padding: 3em 2em;
+  width: 1300px;
+}
+.testimonial-title {
+  color: var(--bg-color);
+}
+.testimonial-title h2 {
+  padding-left: 0.2em;
+  color: var(--first-color);
+}
+#testimonio .card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+  width: 300px;
+}
+
+#testimonio .card-title {
+  color: var(--first-color);
+  font-weight: bold;
+}
+
+
+
+/*COLLAGE*/
+/* Título de "Nuestra historia" */
+.title {
+  text-align: left;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /*tipo de letra del titulo al lado del collage de 4 img*/
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text {
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif; /*tipo de letra del texto*/
+  margin-right: 100px; /* Ajusta el valor según el espacio que desees */
+  font-size: 1rem;
+  font-size: 115%;
+  color: #555;
+}
+
+/* Espaciado entre las imágenes del collage */
+.collage .col-6 {
+  padding: 0.25rem; /* Añade un pequeño espacio entre las imágenes */
+}
+
+
+/* Estilo para el collage de imágenes */
+.collage-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover en las imágenes del collage */
+.collage-img:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+}
+
+
+
+
+/* Botones de control del carrusel extendido*/
+.carousel-control-prev, .carousel-control-next {
+  bottom: 5%; /* Baja los botones */
+  top: auto; /* Elimina cualquier valor superior */
+  color: rgb(20, 2, 2); /* Color de los botones */
+  opacity: 0.7; /* Opacidad inicial */
+  z-index: 10; /* Asegura que los botones estén por encima de la imagen */
+  
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 1; /* Aumenta la opacidad al pasar el cursor */
+}
+
+
+
+/* Navbar */
+.navbar {
+  background-color: #f5d7f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem; /* Reduce la altura del navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar links */
+.navbar-brand {
+  font-family: Arial, sans-serif;
+  font-size: 24px; /* Tamaño de fuente ajustado para destacar la marca */
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.nav-link {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333 !important;
+  position: relative;
+  margin: 0 1rem; /* Espaciado entre los enlaces */
+  padding-bottom: 8px; /* Espacio adicional debajo para el subrayado */
+  text-transform: uppercase; /* Poner en mayúsculas para un estilo similar */
+}
+
+/* Subrayado de enlace activo */
+.nav-link.active {
+  color: #333 !important;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: blueviolet; /* Color de subrayado en hover y activo */
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+#hero {
+  pointer-events: none; /* Desactiva clics en toda la sección hero */
+}
+
+#hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Text blur */
+}
+
+#hero p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Hero */
+#hero .btn {
+  font-size: 1.25rem;
+  background-color: blueviolet;
+  border: none;
+  padding: 15px 30px;
+  pointer-events: auto; /* Habilita clics solo en el botón */
+}
+
+#hero .btn:hover {
+  background-color: rgb(167, 116, 215);
+}
+
+
+
+
+
+
+/* Section Titles */
+#servicios h2 {
+  font-family: Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+/* Cards for services/products */
+.card {
+  background-color: #ffffff; /* White background for card */
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: blur(0); /* No blur initially */
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  filter: blur(3px); /* Slight blur on hover */
+}
+
+/* Button Style */
+.card .btn {
+  background-color: #ab37c0;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #6c107c;
+}
+
+/*Slider*/
+.slider-img {
+  width: 600px;
+  height: 550px;
+  
+}
+/* Contact Form */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #e0777d;
+  box-shadow: 0px 0px 5px rgba(224, 119, 125, 0.5);
+}
+
+
+/* TESTIMONIOS*/
+/* Variables de color */
+:root {
+  --first-color: #8b2b73; /* Color principal */
+  --second-color: #cdc9dd; /* Fondo del área de testimonios */
+  --bg-color: #FFFFFF; /* Fondo de los botones de navegación */
+  --button-color: #7d519b; /* Color de los botones */
+  --button-shadow: rgba(42, 43, 42, 0.18); /* Sombra para los cuadrados de testimonio*/
+}
+
+
+/* Contenedor del slider de testimonios */
+.testimonial-slider {
+  background-color: var(--second-color); /* Fondo del contenedor */
+  padding: 3em 2em; /* Espaciado interno */
+  max-width: 1300px; /* Ancho máximo */
+  border-radius: 20px; /* Bordes redondeados */
+  margin: auto; /* Centrado horizontal */
+  position: relative; /* Posición relativa para los elementos internos */
+  margin-bottom: 2rem; /* Espacio debajo del slider de testimonios */
+}
+
+
+/* Título de la sección */
+.testimonial-title h2 {
+  color: var(--first-color); /* Color del texto */
+  font-size: 2em; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Centrado del título */
+  margin-bottom: 1em; /* Espacio debajo del título */
+}
+
+/* Ícono de cita en el título */
+.testimonial-title i {
+  display: block; /* Para centrar en línea separada */
+  text-align: center; /* Centrado horizontal */
+  margin-bottom: 0.5em; /* Espacio debajo del ícono */
+}
+
+/* Tarjetas de testimonio */
+#testimonio .card {
+  margin: 1em; /* Espacio alrededor de cada tarjeta */
+  padding: 1.5em; /* Espaciado interno de la tarjeta */
+  box-shadow: 2px 6px 8px var(--button-shadow); /* Sombra de la tarjeta */
+  border: none; /* Sin borde */
+  border-radius: 15px; /* Bordes redondeados */
+  width: calc(50% - 2em); /* Ancho de la tarjeta (2 por fila) */
+  flex: 0 0 auto; /* Evita que las tarjetas se expandan */
+}
+
+/* Contenedor de las tarjetas en el carrusel */
+.carousel-inner {
+  display: flex; /* Para mostrar las tarjetas en fila */
+}
+
+/* Título del nombre en cada tarjeta */
+#testimonio .card-title {
+  color: Black; /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.2em; /* Tamaño del texto */
+}
+
+/* Controles de navegación debajo del título */
+.carousel-controls {
+  display: flex; /* Para alinear los botones en fila */
+  justify-content: center; /* Centra los botones */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 1em; /* Espacio superior */
+}
+
+/* Estilo de los botones de navegación */
+.carousel-control-btn {
+  background-color: var(--button-color); /* Fondo del botón */
+  width: 2em; /* Ancho del botón */
+  height: 2em; /* Altura del botón */
+  border-radius: 50%; /* Forma circular */
+  display: flex; /* Centrado de ícono dentro del botón */
+  align-items: center; /* Alineación vertical del ícono */
+  justify-content: center; /* Alineación horizontal del ícono */
+  box-shadow: 2px 6px 8px var(--button-shadow); /* Sombra del botón */
+  cursor: pointer; /* Cursor en forma de mano */
+  color: white; /* Color del ícono en el botón */
+  font-size: 1.5em; /* Tamaño del ícono */
+}
+
+/* Estilo de las estrellas */
+.stars i {
+  color: #ffc107; /* Color dorado para las estrellas */
+}
+
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #af8fb5; /* Color de fondo */
+  color: #4d0d47; /* Color de texto */
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  color: #2a1325;
+}
+
+/* Efecto en íconos al pasar el cursor */
+.footer-section a img {
+  width: 30px; /* Tamaño original del ícono */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave en opacidad y escala */
+}
+
+.footer-section a img:hover {
+  opacity: 0.8; /* Cambia la opacidad al pasar el cursor */
+  transform: scale(1.1); /* Agranda ligeramente el ícono */
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  position: relative;
+  color: #231f20; /* Color de los títulos */
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #a56cae; /* Línea morada bajo el título */
+  margin: 5px auto;
+}
+
+.footer-section p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.icon {
+  width: 26px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.social-icons img {
+  width: 26px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave para los íconos */
+}
+
+.social-icons img:hover {
+  opacity: 0.8; /* Cambia la opacidad al pasar el cursor */
+  transform: scale(1.1); /* Agranda ligeramente el ícono */
+}
+
+@media (max-width: 600px) {
+  .slider-img {
+  height: 70%;
+  width: auto;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .slider-img {
+    height: 80%;
+    width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+  .testimonial-slider {
+  height: 80%;
+  width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+  .collage .col-6     {
+  height: 70%;
+  width: auto;
+    }
+}
+
+

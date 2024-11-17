@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+      
+    />
+    <link rel="stylesheet" href="css/inicio_s.css" />
+    <link rel="icon" href="img/log.png" /> 
+    <style>
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"> <img src="img/logo.png" width="220" height="80" alt="logo"> </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html #servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="giftcard.html"> Gift Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html #contactanos">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html"
+              ><img src="img/carrito_c.png" height="30"/> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#login-section" id="logo-container">
+              <img src="img/inicio_s.png" height="30" alt="Login"> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="main-container">
+    <!-- Contenedor de la imagen -->
+    <div class="img-container">
+      <img src="img/salon.jpeg" alt="Salon">
+    </div>
+  
+    <!-- Contenedor de inicio de sesión -->
+    <div class="login-container">
+      <h2>Iniciar sesión</h2>
+      <form onsubmit="loguear(event)">
+        <div class="form-group">
+          <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit" class="btn">Ingresar</button>
+        </form>
+        <button id="logout-btn-in-form" class="btn d-none"> Cerrar sesión</button> <!-- Botón de cerrar sesión -->
+      <p>
+        <a href="https://gmail.com">Ingresar con cuenta de Google</a>
+      </p>
+      <p>
+        <a href="registro.html">¿No tienes cuenta? Regístrate aquí</a>
+      </p>
+    </div>
+  </div>
+  
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3>Horarios de atención</h3>
+              <p>De Lunes a viernes: 09:00 – 20:00<br>
+                 Sábado: 09:00 – 14:00<br>
+                 Domingo y feriados (cerrado)
+              </p>
+          </div>
+          <div class="footer-section">
+            <h3>Ubicación</h3>
+            <p>Amunategui 92, Concepción, Chile</p>
+            <a href="https://www.google.com/maps/place/Amunategui+92,+Concepción,+Chile" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Ubicación" class="icon">
+            </a>
+        </div>
+        <div class="footer-section" id="contactanos">
+          <h3>Contacto</h3>
+          <p><img src="https://cdn-icons-png.flaticon.com/512/561/561188.png" alt="Email" class="icon"> proyectoconel@mensocodigo.com</p>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/800px-2021_Facebook_icon.svg.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram">
+              </a>
+              <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer">
+                  <img src="https://i.blogs.es/45198e/icono_supernoticia/450_1000.png" alt="WhatsApp">
+              </a>
+          </div>
+      </div>      
+    </div>
+  </div>
+
+
+<script src="js/login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      
+    ></script>
+  </body>
+</html>

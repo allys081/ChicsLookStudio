@@ -1,0 +1,317 @@
+body {
+  padding-top: 90px;
+  font-family: "Arial", sans-serif;
+  background-color: #f1e6f1; /* Light neutral background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f5d7f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem; /* Reduce la altura del navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar links */
+.navbar-brand {
+  font-family: Arial, sans-serif;
+  font-size: 24px; /* Tamaño de fuente ajustado para destacar la marca */
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.nav-link {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333 !important;
+  position: relative;
+  margin: 0 1rem; /* Espaciado entre los enlaces */
+  padding-bottom: 8px; /* Espacio adicional debajo para el subrayado */
+  text-transform: uppercase; /* Poner en mayúsculas para un estilo similar */
+}
+
+/* Subrayado de enlace activo */
+.nav-link.active {
+  color: #333 !important;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: blueviolet; /* Color de subrayado en hover y activo */
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+
+
+
+/* Gift Cards Container */
+.giftcards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 20%;
+}
+
+/* Título y Descripción */
+.giftcards-header {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 2rem;
+  color: #5a2d82;
+}
+
+.giftcards-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.giftcards-header p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Galería de Gift Cards */
+.giftcards-gallery {
+  flex: 2;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.giftcard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.giftcard:hover {
+  transform: translateY(-5px);
+}
+
+.giftcard img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.giftcard-info {
+  padding: 1rem;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.giftcard-info h3 {
+  font-size: 18px;
+  color: #5a2d82;
+  margin-bottom: 0.5rem;
+}
+
+.giftcard-info p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+
+/* Contenedor de Gift Cards y Encabezado */
+.giftcards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 90%;
+  margin: 2rem; /* Espacio para separarlo del navbar */
+}
+
+/* Título y Descripción */
+.giftcards-header {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 2rem;
+  text-align: center;
+  color: #5a2d82;
+}
+
+.giftcards-header h2 {
+  font-family: Franklin Gothic, Arial Bold;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.giftcards-header p {
+  font-family: MS Sans Serif, sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+/* Galería de Gift Cards */
+.giftcards-gallery {
+  flex: 0.5;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dos columnas para las gift cards */
+  gap: 10px; /* Reduce el espacio entre las columnas y filas */
+  justify-items: center; /* Asegura que las tarjetas estén centradas */
+}
+
+.giftcard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 300px; /* Reducimos el ancho de las tarjetas */
+}
+
+.giftcard:hover {
+  transform: translateY(-5px);
+}
+
+.giftcard img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.giftcard-info {
+  padding: 1rem;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.giftcard-info h3 {
+  font-size: 16px; /* Reducimos un poco el tamaño del texto */
+  color:  #7b2b8b;
+  margin-bottom: 0.5rem;
+}
+
+.giftcard-info p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #af8fb5;
+  color: #4d0d47;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: relative;
+
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  color: #2a1325;
+}
+
+.footer-section a img {
+  width: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-section a img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  position: relative;
+  color: #231f20;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #a56cae;
+  margin: 5px auto;
+}
+
+.footer-section p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.icon {
+  width: 26px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.social-icons img {
+  width: 26px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+
+.btn {
+  width: 70%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #6c107c;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-top: 1rem; /* Espacio entre el botón */
+  margin-bottom: 1rem; /* Ajusta el espacio debajo del botón */
+}
+
+.btn:hover {
+  background-color: #9b5aa7;
+}
+
+@media (max-width: 500px) {
+  .giftcards-container {
+  height: 70%;
+  width: 80%;
+    }
+}
